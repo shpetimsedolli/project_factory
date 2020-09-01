@@ -1,0 +1,168 @@
+/* This media query is used only for mobile devices */
+@media only screen and (max-width: 767px) {
+    .nav_wrapper {
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 80px;
+        padding: 20px 35px;
+        background: #f2f3f3;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger {
+        display: block;
+        width: 40px;
+        height: 40px;   
+    }
+    .nav_wrapper li:last-child {
+        padding-right: 35px;
+      }
+    .bannner_section , .collection_section{
+        background-size: none;
+        height: 195px;
+    }
+    .banner_section-wrapper {
+        margin: 0 0 0 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .banner_section-wrapper h1 {
+        font-size: 35px;
+    }
+    .banner_section-buttons a {
+        margin: 0 0 0 0;   
+    }
+    .category_wrapper {
+        display: block;
+        margin-top: 50px;
+    }
+    .category__left{
+        margin-right: 0px;
+    }
+    .category_wrapper img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .fashion_wrapper {
+        margin: 60px 0px;
+    }
+    .box {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .boxes_wrapper {
+        flex-direction: column;
+    }
+    .box__thumb img {
+        width: 100%;
+    }
+    .left__boxes img {
+        margin: 0 0 0 0;
+    }
+    .right__boxes {
+        padding-right: 0px;
+    }
+    .right__boxes-text p {
+        margin-right: 20px;
+    }
+    .collection_wrapper h5 {
+        margin-top: 10px;
+    }
+    .collection_wrapper h3 {
+        font-size: 35px;
+    }
+    .footerWrap {
+        margin-top: 60px;
+        flex-direction: column;
+        height: auto;
+    }
+    .left__footer {
+        padding-right: 0px;
+    }
+    .right__footer input {
+        width: 100%;
+    }
+    .ul__wrapper ul {
+        margin-right: 60px;
+    }
+}
+/* This media query is used only for small tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .nav_wrapper {
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 80px;
+        padding: 20px 35px;
+        background: #f2f3f3;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger {
+        display: block;
+        width: 40px;
+        height: 40px;   
+    }
+    .nav_wrapper li:last-child {
+        padding-right: 35px;
+      }
+    .bannner_section , .collection_section{
+        background-size: none;
+        height: 300px;
+    }
+    .banner_section-buttons a {
+        margin: 0 0 0 0;   
+    }
+    .banner_section-wrapper {
+        margin: 0 0 0 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .category_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .category__left {
+        margin-right: 0px;
+    }
+    .collection_wrapper h5 {
+        margin-top: 80px;
+    }
+    .collection_wrapper h3 {
+        font-size: 35px;
+    }
+    .left__footer {
+        padding-right: 0px;
+    }
+    .right__footer input {
+        width: 100%;
+    }
+    .ul__wrapper ul {
+        margin-right: 60px;
+    }
+}
+/* This media query is used only for big tablet devices */
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+    .bannner_section , .collection_section{
+        background-size: none;
+        background-position: bottom;
+    }
+    .banner_section-wrapper {
+        margin-top: 320px;
+        margin-left: 490px;
+    }
+    .category_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .category__left {
+        margin-right: 0px;
+    }
+}
