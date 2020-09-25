@@ -19,25 +19,25 @@ a {
   align-items: center;
 }
 .hamburger {
-    display: none;
-    width: 40px;
-    height: 40px;
-    background-image: url(../images/open-menu.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/open-menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .nav_wrapper.is--toggled {
-    opacity: 1;
-    visibility: visible;
-    overflow: visible;
-    z-index: 3;
-    height: 100%;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  z-index: 999;
+  height: 100%;
 }
 .nav_wrapper.is--toggled {
-    flex-direction: column;
+  flex-direction: column;
 }
 .nav_wrapper.is--toggled li {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .nav_wrapper li {
   padding-right: 30px;
@@ -63,36 +63,115 @@ a {
   transform: scale(1.04);
 }
 /* BANNER SECTION */
+.banner_slider {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  margin-top: 150px;
+  outline: 0;
+  border: none;
+}
+.banner_slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_slider {
+  width: 100%;
+  position: relative;
+  z-index: 50;
+  outline: 0;
+  border: none;
+}
+.banner_slider .slick-slide {
+  height: 450px;
+  outline: 0;
+}
+.banner_slider .slick-prev {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 45;
+}
+.box_slider .slick-prev {
+  position: absolute;
+  left: -45px;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 45;
+}
+.box_slider .slick-next {
+  position: absolute;
+  right: -25px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+.banner_slider .slick-next {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner_slider .slick-dots {
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.banner_slider .slick-dots button {
+  background-color: #fff;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 0;
+  margin-right: 5px;
+}
+.slick-list {
+  /* text-align: center;
+  margin-top: 60px; */
+}
+.banner_slider .slick-dots .slick-active button {
+  background-color: #222222;
+}
+.control-c {
+  width: 30px;
+  height: 30px;
+}
 .bannner_section {
   background-image: url(../images/banner-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 745px;
 }
-.banner_section-wrapper {
-  margin-top: 420px;
-  margin-left: 690px;
-}
 .banner_section-wrapper h3 {
-  font-size: 18px;
-  margin-bottom: 31px;
+  font-size: 38px;
+  text-align: center;
 }
 .banner_section-wrapper h3:first-child {
   margin-bottom: 18px;
 }
 .banner_section-wrapper h1 {
+  text-align: center;
   font-size: 80px;
+  padding-top: 200px;
   font-weight: 700;
   margin-bottom: 18px;
 }
 .banner_section-buttons a {
+  display: inline-block;
   border: 1px solid black;
   color: #fff;
   background: #222;
-  padding: 4px 29px;
-  margin-right: 35px;
+  padding: 11px 29px;
+  margin: 225px 35px 0px 425px;
 }
-
+.banner_section-buttons a:last-child {
+  margin-left: 0px;
+}
 /* CATEGORY BOXES  */
 
 .category_wrapper {
@@ -240,39 +319,39 @@ img:hover {
   margin-bottom: 40px;
 }
 .right__footer {
-    width: 100%;
+  width: 100%;
 }
 .right__footer h4 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 .right__footer input {
-    width: 532px;
-    height: 45px;
-    margin-bottom: 70px;
-    outline: 0;
-    border: none;
+  width: 532px;
+  height: 45px;
+  margin-bottom: 70px;
+  outline: 0;
+  border: none;
 }
-.ul__wrapper{
-    display: flex;
+.ul__wrapper {
+  display: flex;
 }
 .ul__wrapper ul h5 {
-    margin-bottom: 27px;
-    font-size: 20px;
-    font-weight: 600;
+  margin-bottom: 27px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .ul__wrapper li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .ul__wrapper ul {
-    margin-right: 88px;
+  margin-right: 88px;
 }
 .ul__wrapper ul:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 .footer__copyright {
-    background: #e7f5f8;
-    text-align: center;
-    padding: 35px 0px;
+  background: #e7f5f8;
+  text-align: center;
+  padding: 35px 0px;
 }
